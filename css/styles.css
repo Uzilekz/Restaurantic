@@ -1,0 +1,135 @@
+/* ----------Fonts---------- */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Pacifico&display=swap');
+
+/* ----------General---------- */
+* {
+  box-sizing: border-box;
+}
+body {
+  background: rgb(249,249,249);
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* ----------Estilos Header---------- */
+.main-header {
+  width: 100%;
+}
+.logo {
+  color: #de423a;
+  font: 1.8em 'pacifico', cursive;
+  font-weight: 100;
+  padding: 10px;
+}
+.main-header__contactInfo__phone {
+  background: #de423a;
+  color: white;
+  margin: 0 auto;
+  padding: 10px;
+}
+.main-header__contactInfo__address {
+  margin: 0;
+  padding: 10px;
+}
+.main-header [class*="fa"] {
+  position: relative;
+  right: 5px;
+}
+
+/* ----------Estilos Menu---------- */
+.main-nav {
+  padding: 10px;
+  position: relative;
+  width: 100%;
+  z-index: 2000;
+}
+.icon-menu {
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  display: block;
+  font-size: 1.5em;
+  height: 40px;
+  line-height: 45px;
+  text-align: center;
+  width: 40px;
+}
+.social-icon {
+  display: flex;
+  justify-content: space-between;
+}
+.social-icon [class*="fa"] {
+  align-items: center;
+  background: white;
+  border-radius: 50%;
+  color: black;
+  display: flex;
+  font-size: 1.3em;
+  height: 35px;
+  justify-content: center;
+  margin-left: 10px;
+  width: 35px;
+}
+.social-icon__link {
+  text-decoration: none
+}
+.menu {
+  background: rgba(0,0,0,.85);
+  height: 0;
+  left: 0;
+  list-style: none;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+  top: 55px;
+  width: 100%;
+}
+.menu__link {
+  color: white;
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+}
+.menu__link:hover {
+  background: #de423a;
+}
+.menu__link--select {
+  background: #de423a;
+}
+.mostrar {
+  height: 180px;
+}
+
+/* ---------- Estilos Banner ---------- */
+.banner {
+  margin-top: -55px;
+  position: relative;
+}
+.banner:before {
+  background: rgba(0,0,0,.7);
+  content: '';
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.banner__img {
+  height: 400px;
+  object-fit: cover;
+  width: 100%;
+}
+.banner__content {
+  color: white;
+  font-size: 1.4em;
+  font-weight: bold;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 90%;
+  z-index: 1500;
+}
