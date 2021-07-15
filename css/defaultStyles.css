@@ -1,18 +1,21 @@
 img {
   display: block;
-  max-width: 100%;
   width: 100%;
+  max-width: 100%;
 }
+
 .container {
   margin: auto;
   width: 100%;
 }
+
 .container--flex {
-  align-items: center;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
+
 .column {
   width: 100%;
 }
