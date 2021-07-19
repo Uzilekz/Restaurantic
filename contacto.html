@@ -3,24 +3,16 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
-    <title>Galeria | Restaurantic 🥞</title>
+    <title>Contacto | Restaurantic 🥞</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- CSS -->
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/defaultStyles.css" />
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/galeria.css" />
+    <link rel="stylesheet" href="css/contacto.css" />
   </head>
   <body>
-    <!-- Modal (apretar imagenes galeria) -->
-    <div class="modal" id="modal">
-      <div class="modal__content">
-        <img src="" alt="" class="modal__img" id="modal__img">
-      </div>
-      <div class="modal__boton" id="modal__boton">X</div>
-    </div>
-
     <!-- Header -->
     <header class="main-header">
       <div class="container container--flex">
@@ -50,9 +42,9 @@
           <li class="menu__item">
             <a href="nosotros.html" class="menu__link">Nosotros</a></li>
           <li class="menu__item">
-            <a href="galeria.html" class="menu__link  menu__link--select">Galeria</a></li>
+            <a href="galeria.html" class="menu__link">Galeria</a></li>
           <li class="menu__item">
-            <a href="contacto.html" class="menu__link">Contacto</a></li>
+            <a href="contacto.html" class="menu__link menu__link--select">Contacto</a></li>
         </ul>
         <!-- Redes sociales -->
         <div class="social-icon">
@@ -65,34 +57,45 @@
     
     <!-- Banner -->
     <section class="banner">
-      <img class="banner__img" src="img/banner-gallery.jpg" alt="Banner" />
+      <img class="banner__img" src="img/banner-contact.jpg" alt="Banner" />
       <div class="banner__content">
-        "Lo mejor de nosotros para usted"</div>
+        "Dejanos un mensaje"</div>
     </section>
     
     <!-- Main -->
     <main class="main">
-      <div class="group gallery">
-        <h2 class="group__title">Nuestra Galeria</h2>
+      <section class="group contact">
+        <h2 class="group__title">Contactenos</h2>
         <div class="container container--flex">
-          <div class="column column--50-25">
-            <img src="img/gallery/gallery1.jpg" alt="" class="gallery__img gallery__img--big">
-            <img src="img/gallery/gallery2.jpg" alt="" class="gallery__img gallery__img--small">
+          <!-- Informacion contacto -->
+          <div class="contact-information column column--50">
+            <h3 class="column__title">Informacion de contacto</h3>
+            <p class="column__txt">Todos los datos para contactarse estan aqui abajo, y si quiere puede mandarnos un correo y se lo responderemos con gusto.</p>
+            <p class="column__txt"><i class="fas fa-phone"></i>Telefono 1: 666-666-666</p>
+            <p class="column__txt"><i class="fas fa-phone"></i>Telefono 2: 777-777-777</p>
+            <p class="column__txt"><i class="fas fa-compass"></i>Calle San Martin 123 - BS.AS - Argentina</p>
+            <p class="column__txt"><i class="fas fa-envelope"></i>consultas@restaurantic.com</p>
+            <!-- Redes sociales -->
+            <div class="social-icon">
+              <a href="#" class="social-icon__link"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-icon__link"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-icon__link"><i class="fas fa-envelope"></i></a>
+            </div>
           </div>
-          <div class="column column--50-25">
-            <img src="img/gallery/gallery3.jpg" alt="" class="gallery__img gallery__img--small">
-            <img src="img/gallery/gallery4.jpg" alt="" class="gallery__img gallery__img--big">
+          <!-- Formulario -->
+          <form action="" method="post" class="formulario column column--50">
+            <label for="" class="formulario__label">Nombre:</label>
+            <input type="text" class="formulario__input-txt" name="nombre">
+            <label for="" class="formulario__label">Correo:</label>
+            <input type="text" class="formulario__input-txt" name="correo">
+            <label for="" class="formulario__label">Telefono:</label>
+            <input type="text" class="formulario__input-txt" name="telefono">
+            <label for="" class="formulario__label">Mensaje:</label>
+            <textarea name="mensaje" id="" cols="30" rows="10" class="formulario__textarea"></textarea>
+            <input type="submit" class="btn formulario__btn">
+          </form>
           </div>
-          <div class="column column--50-25">
-            <img src="img/gallery/gallery5.jpg" alt="" class="gallery__img gallery__img--big">
-            <img src="img/gallery/gallery6.jpg" alt="" class="gallery__img gallery__img--small">
-          </div>
-          <div class="column column--50-25">
-            <img src="img/gallery/gallery7.jpg" alt="" class="gallery__img gallery__img--small">
-            <img src="img/gallery/gallery8.jpg" alt="" class="gallery__img gallery__img--big">
-          </div>
-        </div>
-      </div>
+      </section>
     </main>
     
     <!-- Footer -->
@@ -136,6 +139,5 @@
     
     <!-- Scripts -->
     <script src="js/menu.js"></script>
-    <script src="js/modal.js"></script>
   </body>
 </html>

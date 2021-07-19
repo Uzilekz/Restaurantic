@@ -1,0 +1,83 @@
+/* Informacion contacto */
+.contact-information {
+  margin-bottom: 30px;
+  padding: 10px;
+  padding-top: 0;
+  border-bottom: 1px solid #de423a;
+}
+
+.contact-information .column__title {
+  font-family: "Pacifico", cursive;
+  font-weight: 100;
+}
+
+.contact-information [class*="fa-"] {
+  font-size: 1.3em;
+  position: relative;
+  right: 7px;
+}
+
+.contact-information .social-icon {
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.contact-information .social-icon [class*="fa-"] {
+  background: black;
+  color: white;
+  margin-left: 0;
+  margin-right: 15px;
+}
+
+/* Formulario */
+.formulario {
+  padding: 10px;
+  padding-top: 0;
+}
+
+.formulario__label, .formulario__input-txt, .formulario__textarea {
+  display: block;
+  width: 100%;
+}
+
+.formulario__input-txt {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.formulario__textarea {
+  min-height: 100px;
+  max-height: 200px;
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.formulario__btn {
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+@media screen and (min-width:480px) {
+  .contact .container--flex {
+    align-items: flex-start;
+  }
+  .contact-information {
+    height: 450px;
+    border-right: 1px solid #de423a;
+    border-bottom: none;
+  }
+  .contact-information p {
+    font-size: .8em;
+    line-height: 1.4em;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .contact-information p {
+    font-size: 1em;
+  }
+  .contact-information .column__title {
+    font-size: 1.5em;
+  }
+}
