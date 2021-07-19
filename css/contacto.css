@@ -1,5 +1,6 @@
 /* Informacion contacto */
 .contact-information {
+  margin-left: 10px;
   margin-bottom: 30px;
   padding: 10px;
   padding-top: 0;
@@ -12,6 +13,7 @@
 }
 
 .contact-information [class*="fa-"] {
+  margin-left:11px;
   font-size: 1.3em;
   position: relative;
   right: 7px;
@@ -25,7 +27,7 @@
 .contact-information .social-icon [class*="fa-"] {
   background: black;
   color: white;
-  margin-left: 0;
+  margin-left: 11px;
   margin-right: 15px;
 }
 
